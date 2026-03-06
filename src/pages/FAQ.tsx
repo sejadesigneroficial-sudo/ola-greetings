@@ -224,7 +224,7 @@ export default function FAQ() {
                     className="gap-2 bg-[#39881e] hover:bg-[#39881e]/90 text-white"
                     onClick={() => {
                       const message = encodeURIComponent("Olá! Tenho uma dúvida sobre os leilões da arremate24h.");
-                      window.open(`https://wa.me/${siteSettings.whatsapp || '5547999999999'}?text=${message}`, '_blank');
+                      window.open(`https://wa.me/${siteSettings?.whatsapp || '5547999999999'}?text=${message}`, '_blank');
                     }}
                   >
                     <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
