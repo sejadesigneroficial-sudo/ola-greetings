@@ -299,6 +299,43 @@ export function DataProvider({ children }: { children: ReactNode }) {
     fetchData();
   }, [fetchData]);
 
+  // Real-time subscription: keep products state in sync with DB changes
+  useEffect(() => {
+    const channel = supabase
+      .channel('products:all')
+      .on(
+        'postgres_changes',
+        { event: 'UPDATE', schema: 'public', table: 'products' },
+        (payload) => {
+          const updated = payload.new as Product;
+          setProducts((prev) =>
+            prev.map((p) => (p.id === updated.id ? { ...p, ...updated } : p))
+          );
+        }
+      )
+      .on(
+        'postgres_changes',
+        { event: 'INSERT', schema: 'public', table: 'products' },
+        (payload) => {
+          const inserted = payload.new as Product;
+          setProducts((prev) => [inserted, ...prev]);
+        }
+      )
+      .on(
+        'postgres_changes',
+        { event: 'DELETE', schema: 'public', table: 'products' },
+        (payload) => {
+          const deleted = payload.old as { id: string };
+          setProducts((prev) => prev.filter((p) => p.id !== deleted.id));
+        }
+      )
+      .subscribe();
+
+    return () => {
+      supabase.removeChannel(channel);
+    };
+  }, []);
+
   // Product actions
   const addProduct = async (product: Omit<Product, 'id'>) => {
     const { error } = await supabase.from('products').insert([product]);

@@ -2,8 +2,10 @@ import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { CountdownTimer } from "./CountdownTimer";
-import { MapPin, Eye } from "lucide-react";
+import { MapPin, Eye, TrendingUp } from "lucide-react";
 import { useData, Product } from "@/contexts/DataContext";
+import { useRealtimeBid } from "@/hooks/useRealtimeBid";
+import { cn } from "@/lib/utils";
 
 interface AuctionCardCompactProps {
   auction: Product;
@@ -11,7 +13,11 @@ interface AuctionCardCompactProps {
 
 export function AuctionCardCompact({ auction }: AuctionCardCompactProps) {
   const { siteSettings } = useData();
-  
+  const { currentBid, isFlashing, bidCount } = useRealtimeBid(
+    auction.id,
+    auction.current_bid || auction.starting_bid || 0
+  );
+
   const formatCurrency = (value: number) => {
     return new Intl.NumberFormat("pt-BR", {
       style: "currency",
@@ -30,7 +36,7 @@ export function AuctionCardCompact({ auction }: AuctionCardCompactProps) {
   const now = new Date();
   const closingDate = auction.closing_date ? new Date(auction.closing_date) : null;
   const openingDate = auction.opening_date ? new Date(auction.opening_date) : null;
-  
+
   const isActive = closingDate && closingDate > now && (!openingDate || openingDate <= now);
 
   return (
@@ -43,7 +49,7 @@ export function AuctionCardCompact({ auction }: AuctionCardCompactProps) {
             alt={auction.title}
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
-          
+
           {/* Lot Badge */}
           {auction.lot_number && (
             <div className="absolute top-3 right-3">
@@ -80,11 +86,9 @@ export function AuctionCardCompact({ auction }: AuctionCardCompactProps) {
         {/* Year, Location and Views Row */}
         <div className="flex items-center justify-between text-xs text-muted-foreground">
           <div className="flex items-center gap-3">
-            {/* Year */}
             {auction.year && (
               <span className="font-medium">{auction.year}</span>
             )}
-            {/* Location */}
             {auction.location && (
               <span className="flex items-center gap-1">
                 <MapPin className="w-3 h-3" />
@@ -92,18 +96,39 @@ export function AuctionCardCompact({ auction }: AuctionCardCompactProps) {
               </span>
             )}
           </div>
-          {/* Views */}
           <span className="flex items-center gap-1">
             <Eye className="w-3 h-3" />
             {auction.views || 0}
           </span>
         </div>
 
-        {/* Price */}
+        {/* Price — real-time bid with flash animation */}
         <div className="pt-2 border-t border-border">
-          <p className="text-[10px] text-muted-foreground uppercase">Lance atual</p>
-          <p className="font-display font-bold text-lg text-accent">
-            {formatCurrency(auction.current_bid || auction.starting_bid || 0)}
+          <div className="flex items-center justify-between mb-0.5">
+            <p className="text-[10px] text-muted-foreground uppercase tracking-wide">Lance atual</p>
+            {bidCount > 0 && (
+              <span className="flex items-center gap-1 text-[10px] text-accent font-semibold animate-fade-in">
+                <TrendingUp className="w-3 h-3" />
+                +{bidCount} lance{bidCount > 1 ? 's' : ''}
+              </span>
+            )}
+          </div>
+          <p
+            className={cn(
+              "font-display font-bold text-lg transition-colors duration-300",
+              isFlashing
+                ? "text-accent scale-105 drop-shadow-[0_0_8px_hsl(var(--accent)/0.7)]"
+                : "text-accent"
+            )}
+            style={{
+              transition: isFlashing
+                ? 'color 0.15s ease, transform 0.15s ease'
+                : 'color 0.6s ease, transform 0.6s ease',
+              transform: isFlashing ? 'scale(1.05)' : 'scale(1)',
+              display: 'inline-block',
+            }}
+          >
+            {formatCurrency(currentBid)}
           </p>
         </div>
 
