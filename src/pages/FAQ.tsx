@@ -113,7 +113,7 @@ const faqCategories = [
       },
       {
         question: "Como entro em contato com o suporte?",
-        answer: "Você pode nos contatar via WhatsApp (47) 99999-9999, telefone (47) 3311-0550, e-mail contato@arremate24h.com.br ou através do formulário na página de Contato.",
+        answer: "Você pode nos contatar via WhatsApp (21) 97965-4426, telefone (21) 97965-4426, e-mail contato@arremate24h.com.br ou através do formulário na página de Contato.",
       },
       {
         question: "Qual o horário de atendimento?",
@@ -224,7 +224,7 @@ export default function FAQ() {
                     className="gap-2 bg-[#39881e] hover:bg-[#39881e]/90 text-white"
                     onClick={() => {
                       const message = encodeURIComponent("Olá! Tenho uma dúvida sobre os leilões da arremate24h.");
-                      window.open(`https://wa.me/${siteSettings?.whatsapp || '5547999999999'}?text=${message}`, '_blank');
+                      window.open(`https://wa.me/${siteSettings?.whatsapp || '5521979654426'}?text=${message}`, '_blank');
                     }}
                   >
                     <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
