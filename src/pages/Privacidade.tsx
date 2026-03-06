@@ -108,7 +108,7 @@ export default function Privacidade() {
                 </p>
                 <ul className="list-none text-muted-foreground space-y-2">
                   <li><strong>E-mail:</strong> privacidade@arremate24h.com.br</li>
-                  <li><strong>Telefone:</strong> (47) 3311-0550</li>
+                  <li><strong>Telefone:</strong> (21) 97965-4426</li>
                   <li><strong>Encarregado de Dados (DPO):</strong> dpo@arremate24h.com.br</li>
                 </ul>
               </CardContent>

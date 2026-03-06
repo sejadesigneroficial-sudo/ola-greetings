@@ -49,7 +49,7 @@ export default function Edital() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 pt-4 border-t border-border">
                   <div className="flex items-center gap-2 text-sm">
                     <Phone className="w-4 h-4 text-muted-foreground" />
-                    <span>{siteSettings.phone || "(47) 3311-0550"}</span>
+                    <span>{siteSettings.phone || "(21) 97965-4426"}</span>
                   </div>
                   <div className="flex items-center gap-2 text-sm">
                     <Mail className="w-4 h-4 text-muted-foreground" />

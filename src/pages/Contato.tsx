@@ -40,7 +40,7 @@ const Contato = () => {
     {
       icon: Phone,
       title: "Telefone",
-      value: siteSettings.phone || "(47) 3311-0550",
+      value: siteSettings.phone || "(21) 97965-4426",
       description: "Segunda a Sexta, 8h às 18h",
     },
     {

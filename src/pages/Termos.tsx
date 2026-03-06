@@ -101,7 +101,7 @@ export default function Termos() {
 
                 <h2 className="font-display text-xl font-bold mb-4">11. Contato</h2>
                 <p className="text-muted-foreground">
-                  Em caso de dúvidas sobre estes Termos de Uso, entre em contato conosco através do e-mail: contato@arremate24h.com.br ou telefone: (47) 3311-0550.
+                  Em caso de dúvidas sobre estes Termos de Uso, entre em contato conosco através do e-mail: contato@arremate24h.com.br ou telefone: (21) 97965-4426.
                 </p>
               </CardContent>
             </Card>
