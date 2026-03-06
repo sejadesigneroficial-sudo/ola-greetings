@@ -165,8 +165,8 @@ interface DataContextType {
 
 const defaultSettings: SiteSettings = {
   id: '',
-  phone: '(47) 3311-0550',
-  whatsapp: '5547999999999',
+  phone: '(21) 97965-4426',
+  whatsapp: '5521979654426',
   email: 'contato@agrolance.com.br',
   financing_link: '',
   address: 'São Paulo, SP - Brasil',

@@ -46,7 +46,7 @@ export function Header() {
   const { user, profile, signOut } = useAuthContext();
   const { siteSettings } = useData();
   const { notifications, unreadCount, markAllAsRead } = useNotifications();
-  const phone = siteSettings?.phone || "(47) 3311-0550";
+  const phone = siteSettings?.phone || "(21) 97965-4426";
 
   const handleLogout = async () => {
     await signOut();

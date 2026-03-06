@@ -103,7 +103,7 @@ export default function Servicos() {
   
   const handleWhatsApp = () => {
     const message = encodeURIComponent("Olá! Gostaria de saber mais sobre os serviços da arremate24h.");
-    window.open(`https://wa.me/${siteSettings?.whatsapp || '5547999999999'}?text=${message}`, '_blank');
+    window.open(`https://wa.me/${siteSettings?.whatsapp || '5521979654426'}?text=${message}`, '_blank');
   };
 
   return (

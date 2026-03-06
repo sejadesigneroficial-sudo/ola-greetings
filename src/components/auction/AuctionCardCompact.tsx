@@ -29,7 +29,7 @@ export function AuctionCardCompact({ auction }: AuctionCardCompactProps) {
     e.preventDefault();
     e.stopPropagation();
     const message = encodeURIComponent(`Olá! Tenho interesse no lote ${auction.lot_number} - ${auction.title}`);
-    window.open(`https://wa.me/${siteSettings?.whatsapp || '5547999999999'}?text=${message}`, '_blank');
+    window.open(`https://wa.me/${siteSettings?.whatsapp || '5521979654426'}?text=${message}`, '_blank');
   };
 
   // Determine auction status based on dates

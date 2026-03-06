@@ -151,7 +151,7 @@ export function Footer() {
           <div className="flex flex-wrap gap-6 justify-center lg:justify-start text-sm text-primary-foreground/70">
             <a href={`tel:${siteSettings?.phone?.replace(/\D/g, '')}`} className="flex items-center gap-2 hover:text-primary-foreground transition-colors">
               <Phone className="w-4 h-4" />
-              {siteSettings?.phone || "(47) 3311-0550"}
+              {siteSettings?.phone || "(21) 97965-4426"}
             </a>
             <a href={`mailto:${siteSettings?.email}`} className="flex items-center gap-2 hover:text-primary-foreground transition-colors">
               <Mail className="w-4 h-4" />
