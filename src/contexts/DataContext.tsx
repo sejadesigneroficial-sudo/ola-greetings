@@ -233,6 +233,18 @@ export function DataProvider({ children }: { children: ReactNode }) {
       .limit(1)
       .maybeSingle();
     if (settingsData) {
+      // Patch phone/whatsapp if still showing old numbers
+      const oldNumbers = ['(15) 981896623', '(47) 3311-0550', '5547999999999', '15981896623'];
+      const needsPatch =
+        oldNumbers.some(n => settingsData.phone === n || settingsData.whatsapp === n);
+      if (needsPatch) {
+        await supabase
+          .from('site_settings')
+          .update({ phone: '(21) 97965-4426', whatsapp: '5521979654426' })
+          .eq('id', settingsData.id);
+        settingsData.phone = '(21) 97965-4426';
+        settingsData.whatsapp = '5521979654426';
+      }
       setSiteSettings(settingsData as unknown as SiteSettings);
     } else {
       setSiteSettings(defaultSettings);
