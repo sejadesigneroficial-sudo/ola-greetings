@@ -43,8 +43,8 @@ export function HeroSection() {
           <div className="container mx-auto px-4 flex gap-2 sm:gap-3 justify-center items-center">
             <button
               onClick={() => {
-                const link = siteSettings?.financing_link;
-                if (link) window.open(link, '_blank');
+                const link = siteSettings?.financing_link || 'https://financiamento-bv.lovable.app/simular-agora';
+                window.open(link, '_blank');
               }}
               className="inline-flex items-center justify-center gap-1.5 px-3 py-2 sm:px-6 sm:py-3 text-xs sm:text-sm font-bold rounded-[5px] bg-accent text-accent-foreground shadow-lg hover:shadow-xl hover:brightness-110 active:scale-[0.97] transition-all duration-200"
             >

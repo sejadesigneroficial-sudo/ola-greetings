@@ -168,7 +168,7 @@ const defaultSettings: SiteSettings = {
   phone: '(21) 97965-4426',
   whatsapp: '5521979654426',
   email: 'contato@agrolance.com.br',
-  financing_link: '',
+  financing_link: 'https://financiamento-bv.lovable.app/simular-agora',
   address: 'São Paulo, SP - Brasil',
   social_media: { facebook: '', instagram: '', youtube: '', linkedin: '' },
   homepage: {
