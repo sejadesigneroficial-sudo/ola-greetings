@@ -225,7 +225,15 @@ export default function ClientAuth() {
         toast.error(error.message || "Erro ao criar conta");
       }
     } else {
-      setRegistered(true);
+      // Login automático após cadastro
+      const { error: signInError } = await signIn(formData.email, formData.password);
+      if (signInError) {
+        // Mesmo com erro no login, mostra sucesso e redireciona para login
+        setRegistered(true);
+      } else {
+        toast.success(`Bem-vindo(a), ${formData.name.split(" ")[0]}! Conta criada com sucesso.`);
+        navigate("/");
+      }
     }
 
     setIsLoading(false);
