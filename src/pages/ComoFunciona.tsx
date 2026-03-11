@@ -201,7 +201,7 @@ const ComoFunciona = () => {
                 Pronto para começar?
               </h2>
               <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
-                Cadastre-se agora e tenha acesso a centenas de máquinas agrícolas 
+              Cadastre-se agora e tenha acesso a centenas de carros e motos 
                 com as melhores condições do mercado.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">

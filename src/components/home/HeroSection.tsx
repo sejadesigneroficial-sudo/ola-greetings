@@ -32,7 +32,7 @@ export function HeroSection() {
       <div className="relative h-[320px] md:h-[380px] overflow-hidden">
         <img
           src={banner.image_url || heroBg}
-          alt="Máquinas agrícolas"
+          alt="Carros e motos em leilão"
           className="w-full h-full object-cover"
         />
         {/* Overlay */}
