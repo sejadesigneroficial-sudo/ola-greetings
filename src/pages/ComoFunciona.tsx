@@ -104,7 +104,7 @@ const ComoFunciona = () => {
         <title>Como Funciona | arremate24h</title>
         <meta 
           name="description" 
-          content="Saiba como participar dos leilões de máquinas agrícolas na arremate24h. Passo a passo completo do cadastro até a retirada do equipamento." 
+          content="Saiba como participar dos leilões de carros e motos na arremate24h. Passo a passo completo do cadastro até a retirada do veículo." 
         />
       </Helmet>
 

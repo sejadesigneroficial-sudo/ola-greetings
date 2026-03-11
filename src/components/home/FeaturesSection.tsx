@@ -76,7 +76,7 @@ export function FeaturesSection() {
             Por que escolher a Arremate 24 Horas?
           </h2>
           <p className="text-muted-foreground mx-auto">
-            Oferecemos a melhor experiência em leilões de máquinas agrícolas, 
+          Oferecemos a melhor experiência em leilões de carros e motos,
             com tecnologia de ponta e atendimento especializado.
           </p>
         </div>
