@@ -172,10 +172,10 @@ const defaultSettings: SiteSettings = {
   address: 'São Paulo, SP - Brasil',
   social_media: { facebook: '', instagram: '', youtube: '', linkedin: '' },
   homepage: {
-    metaTitle: 'AgroLance Leilões',
+    metaTitle: 'Arremate 24 Horas',
     metaDescription: '',
-    ctaTitle: 'Pronto para encontrar sua próxima máquina?',
-    ctaDescription: 'Junte-se a milhares de agricultores',
+    ctaTitle: 'Pronto para encontrar seu próximo carro ou moto?',
+    ctaDescription: 'Junte-se a milhares de compradores',
     ctaButtonText: 'Criar Minha Conta',
   },
   leiloes_page: { title: 'Leilões', description: '', metaDescription: '' },

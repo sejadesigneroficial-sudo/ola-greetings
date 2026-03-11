@@ -34,7 +34,7 @@ export function FeaturedAuctions() {
             </h2>
             <p className="text-muted-foreground mt-2 max-w-xl">
               Confira os leilões mais disputados do momento. Lance agora e garanta 
-              as melhores máquinas agrícolas do mercado.
+              os melhores carros e motos do mercado.
             </p>
           </div>
           <Button variant="outline" asChild>
