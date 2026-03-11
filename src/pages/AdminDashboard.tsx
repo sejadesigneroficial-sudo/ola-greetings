@@ -696,7 +696,42 @@ export default function AdminDashboard() {
                   <SelectContent>{categories.map((c) => <SelectItem key={c.id} value={c.name}>{c.name}</SelectItem>)}</SelectContent>
                 </Select>
               </div>
-              <div><Label>Localização *</Label><Input value={productForm.location || ''} onChange={(e) => setProductForm({ ...productForm, location: e.target.value })} /></div>
+              <div>
+                <Label>Localização *</Label>
+                <Select value={productForm.location || ''} onValueChange={(v) => setProductForm({ ...productForm, location: v })}>
+                  <SelectTrigger><SelectValue placeholder="Selecione a cidade/estado" /></SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="Belém - PA">Belém - PA</SelectItem>
+                    <SelectItem value="Belo Horizonte - MG">Belo Horizonte - MG</SelectItem>
+                    <SelectItem value="Betim - MG">Betim - MG</SelectItem>
+                    <SelectItem value="Brasília - DF">Brasília - DF</SelectItem>
+                    <SelectItem value="Campinas - SP">Campinas - SP</SelectItem>
+                    <SelectItem value="Campo Grande - MS">Campo Grande - MS</SelectItem>
+                    <SelectItem value="Cascavel - PR">Cascavel - PR</SelectItem>
+                    <SelectItem value="Cuiabá - MT">Cuiabá - MT</SelectItem>
+                    <SelectItem value="Curitiba - PR">Curitiba - PR</SelectItem>
+                    <SelectItem value="Fortaleza - CE">Fortaleza - CE</SelectItem>
+                    <SelectItem value="Goiânia - GO">Goiânia - GO</SelectItem>
+                    <SelectItem value="Londrina - PR">Londrina - PR</SelectItem>
+                    <SelectItem value="Luís Eduardo Magalhães - BA">Luís Eduardo Magalhães - BA</SelectItem>
+                    <SelectItem value="Manaus - AM">Manaus - AM</SelectItem>
+                    <SelectItem value="Maringá - PR">Maringá - PR</SelectItem>
+                    <SelectItem value="Palmas - TO">Palmas - TO</SelectItem>
+                    <SelectItem value="Porto Alegre - RS">Porto Alegre - RS</SelectItem>
+                    <SelectItem value="Recife - PE">Recife - PE</SelectItem>
+                    <SelectItem value="Rio de Janeiro - RJ">Rio de Janeiro - RJ</SelectItem>
+                    <SelectItem value="Rio Verde - GO">Rio Verde - GO</SelectItem>
+                    <SelectItem value="Rondonópolis - MT">Rondonópolis - MT</SelectItem>
+                    <SelectItem value="Salvador - BA">Salvador - BA</SelectItem>
+                    <SelectItem value="Sinop - MT">Sinop - MT</SelectItem>
+                    <SelectItem value="Sorriso - MT">Sorriso - MT</SelectItem>
+                    <SelectItem value="São Luís - MA">São Luís - MA</SelectItem>
+                    <SelectItem value="São Paulo - SP">São Paulo - SP</SelectItem>
+                    <SelectItem value="Uberlândia - MG">Uberlândia - MG</SelectItem>
+                    <SelectItem value="Uberaba - MG">Uberaba - MG</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div><Label>Lance Atual</Label><Input type="text" value={productForm.starting_bid ?? ''} onChange={(e) => setProductForm({ ...productForm, starting_bid: e.target.value ? Number(e.target.value) : undefined })} /></div>
