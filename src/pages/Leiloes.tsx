@@ -68,10 +68,10 @@ const Leiloes = () => {
   return (
     <>
       <Helmet>
-        <title>{siteSettings?.leiloes_page?.title || "Leilões de Máquinas Agrícolas"} | arremate24h</title>
+        <title>{siteSettings?.leiloes_page?.title || "Leilões de Carros e Motos"} | arremate24h</title>
         <meta 
           name="description" 
-          content={siteSettings?.leiloes_page?.metaDescription || "Encontre os melhores leilões de tratores, colheitadeiras e implementos agrícolas."} 
+          content={siteSettings?.leiloes_page?.metaDescription || "Encontre os melhores leilões de carros, motos e veículos com as melhores condições do mercado."} 
         />
       </Helmet>
 
