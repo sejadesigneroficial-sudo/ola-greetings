@@ -25,11 +25,11 @@ export function CTASection() {
             </div>
 
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-6">
-              {homepage?.ctaTitle || "Pronto para encontrar sua próxima máquina?"}
+              {homepage?.ctaTitle || "Pronto para encontrar seu próximo veículo?"}
             </h2>
 
             <p className="text-lg text-primary-foreground/80 mb-8 mx-auto">
-              {homepage?.ctaDescription || "Junte-se a milhares de agricultores e empresários que já encontraram as melhores oportunidades em nossa plataforma. Cadastre-se agora e comece a dar lances."}
+              {homepage?.ctaDescription || "Junte-se a milhares de compradores e revendedores que já encontraram as melhores oportunidades em nossa plataforma. Cadastre-se agora e comece a dar lances."}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

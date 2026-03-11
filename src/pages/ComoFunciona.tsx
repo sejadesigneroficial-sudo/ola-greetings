@@ -29,7 +29,7 @@ const steps = [
   {
     icon: Search,
     title: "2. Encontre seu Lote",
-    description: "Navegue pelos leilões ativos e encontre a máquina que você procura. Use filtros para refinar sua busca.",
+    description: "Navegue pelos leilões ativos e encontre o veículo que você procura. Use filtros para refinar sua busca.",
     details: [
       "Fotos detalhadas dos lotes",
       "Especificações completas",
@@ -104,7 +104,7 @@ const ComoFunciona = () => {
         <title>Como Funciona | arremate24h</title>
         <meta 
           name="description" 
-          content="Saiba como participar dos leilões de máquinas agrícolas na arremate24h. Passo a passo completo do cadastro até a retirada do equipamento." 
+          content="Saiba como participar dos leilões de carros e motos na arremate24h. Passo a passo completo do cadastro até a retirada do veículo." 
         />
       </Helmet>
 
@@ -120,7 +120,7 @@ const ComoFunciona = () => {
               </h1>
               <p className="text-xl text-primary-foreground/80 max-w-2xl mx-auto">
                 Participar dos nossos leilões é simples e seguro. Conheça o passo a passo 
-                completo para arrematar sua próxima máquina agrícola.
+              completo para arrematar seu próximo veículo.
               </p>
             </div>
           </section>
@@ -201,7 +201,7 @@ const ComoFunciona = () => {
                 Pronto para começar?
               </h2>
               <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
-                Cadastre-se agora e tenha acesso a centenas de máquinas agrícolas 
+              Cadastre-se agora e tenha acesso a centenas de carros e motos 
                 com as melhores condições do mercado.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">

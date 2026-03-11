@@ -68,10 +68,10 @@ const Leiloes = () => {
   return (
     <>
       <Helmet>
-        <title>{siteSettings?.leiloes_page?.title || "Leilões de Máquinas Agrícolas"} | arremate24h</title>
+        <title>{siteSettings?.leiloes_page?.title || "Leilões de Carros e Motos"} | arremate24h</title>
         <meta 
           name="description" 
-          content={siteSettings?.leiloes_page?.metaDescription || "Encontre os melhores leilões de tratores, colheitadeiras e implementos agrícolas."} 
+          content={siteSettings?.leiloes_page?.metaDescription || "Encontre os melhores leilões de carros, motos e veículos com as melhores condições do mercado."} 
         />
       </Helmet>
 
@@ -84,10 +84,10 @@ const Leiloes = () => {
             <div className="container mx-auto px-4">
               <div className="max-w-3xl">
                 <h1 className="font-display text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">
-                  {siteSettings?.leiloes_page?.title || "Leilões de Máquinas Agrícolas"}
+                  {siteSettings?.leiloes_page?.title || "Leilões de Carros e Motos"}
                 </h1>
                 <p className="text-primary-foreground/80 mb-6">
-                  {siteSettings?.leiloes_page?.description || "Encontre tratores, colheitadeiras, implementos e veículos com as melhores condições do mercado."}
+                  {siteSettings?.leiloes_page?.description || "Encontre carros, motos e veículos com as melhores condições do mercado."}
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <Badge variant="gold" className="px-3 py-1.5">

@@ -10,7 +10,7 @@ import {
   Users,
   TrendingUp,
   Shield,
-  Leaf
+  Recycle
 } from "lucide-react";
 
 const stats = [
@@ -29,7 +29,7 @@ const values = [
   {
     icon: Eye,
     title: "Transparência",
-    description: "Informações claras e completas sobre todos os lotes, com histórico de manutenção e documentação.",
+    description: "Informações claras e completas sobre todos os lotes, com histórico e documentação verificada.",
   },
   {
     icon: Heart,
@@ -37,9 +37,9 @@ const values = [
     description: "Dedicação total aos nossos clientes, oferecendo suporte especializado em todas as etapas.",
   },
   {
-    icon: Leaf,
+    icon: Recycle,
     title: "Sustentabilidade",
-    description: "Promovemos a reutilização de máquinas agrícolas, contribuindo para um agronegócio mais sustentável.",
+    description: "Promovemos a reutilização de veículos, contribuindo para um mercado mais sustentável.",
   },
 ];
 
@@ -68,7 +68,7 @@ const QuemSomos = () => {
         <title>Quem Somos | arremate24h</title>
         <meta 
           name="description" 
-          content="Conheça a arremate24h, a maior plataforma de leilões de máquinas agrícolas do Brasil. Nossa história, missão e valores." 
+          content="Conheça a arremate24h, a maior plataforma de leilões de carros e motos do Brasil. Nossa história, missão e valores." 
         />
       </Helmet>
 
@@ -84,7 +84,7 @@ const QuemSomos = () => {
                   Quem Somos
                 </h1>
                 <p className="text-xl text-primary-foreground/80">
-                  Somos a maior plataforma de leilões de máquinas agrícolas do Brasil, 
+                  Somos a maior plataforma de leilões de carros e motos do Brasil, 
                   conectando compradores e vendedores com tecnologia, segurança e transparência.
                 </p>
               </div>
@@ -126,33 +126,33 @@ const QuemSomos = () => {
                   </h2>
                   <div className="space-y-4 text-muted-foreground">
                     <p>
-                      A arremate24h nasceu em 2018 com uma missão clara: revolucionar o mercado 
-                      de máquinas agrícolas usadas no Brasil. Identificamos uma lacuna no setor, 
+                      A arremate24h nasceu com uma missão clara: revolucionar o mercado 
+                      de carros e motos usados no Brasil. Identificamos uma lacuna no setor, 
                       onde compradores e vendedores enfrentavam dificuldades para se conectar 
                       de forma segura e transparente.
                     </p>
                     <p>
-                      Com uma equipe apaixonada pelo agronegócio e expertise em tecnologia, 
+                      Com uma equipe apaixonada pelo mercado automotivo e expertise em tecnologia, 
                       desenvolvemos uma plataforma que simplifica todo o processo de compra e 
-                      venda de equipamentos agrícolas, desde tratores até implementos.
+                      venda de veículos, de carros populares a motos esportivas.
                     </p>
                     <p>
                       Hoje, somos referência no mercado, com milhares de leilões realizados e 
-                      uma comunidade crescente de agricultores, empresários e revendedores que 
+                      uma comunidade crescente de compradores, empresários e revendedores que 
                       confiam em nossa plataforma para fazer negócios.
                     </p>
                   </div>
                 </div>
                 <div className="relative">
                   <img
-                    src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&q=80"
-                    alt="Campo agrícola"
+                    src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&q=80"
+                    alt="Carros em leilão"
                     className="rounded-lg shadow-xl"
                   />
                   <div className="absolute -bottom-6 -left-6 bg-gold rounded-lg p-6 shadow-lg">
                     <Award className="w-8 h-8 text-accent-foreground mb-2" />
                     <p className="font-display font-bold text-accent-foreground">
-                      Desde 2018
+                      Leilões 24h
                     </p>
                   </div>
                 </div>
@@ -173,9 +173,9 @@ const QuemSomos = () => {
                       Nossa Missão
                     </h3>
                     <p className="text-muted-foreground">
-                      Democratizar o acesso a máquinas agrícolas de qualidade, conectando 
+                      Democratizar o acesso a carros e motos de qualidade, conectando 
                       compradores e vendedores em uma plataforma segura, transparente e 
-                      eficiente, impulsionando o desenvolvimento do agronegócio brasileiro.
+                      eficiente, impulsionando o mercado automotivo brasileiro.
                     </p>
                   </CardContent>
                 </Card>
@@ -189,9 +189,9 @@ const QuemSomos = () => {
                       Nossa Visão
                     </h3>
                     <p className="text-muted-foreground">
-                      Ser a principal referência em leilões de equipamentos agrícolas na 
-                      América Latina, reconhecida pela inovação, qualidade de serviço e 
-                      contribuição para o crescimento sustentável do setor agro.
+                      Ser a principal referência em leilões de veículos no Brasil, 
+                      reconhecida pela inovação, qualidade de serviço e 
+                      contribuição para um mercado automotivo mais acessível e transparente.
                     </p>
                   </CardContent>
                 </Card>
@@ -241,7 +241,7 @@ const QuemSomos = () => {
                   Nossa Equipe
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Profissionais dedicados a oferecer a melhor experiência em leilões agrícolas.
+                  Profissionais dedicados a oferecer a melhor experiência em leilões de veículos.
                 </p>
               </div>
 
