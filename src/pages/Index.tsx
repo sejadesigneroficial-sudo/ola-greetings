@@ -20,17 +20,17 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>{homepage?.metaTitle || "arremate24h - O Maior Leilão de Máquinas Agrícolas do Brasil"}</title>
+        <title>{homepage?.metaTitle || "arremate24h - O Maior Leilão de Carros e Motos do Brasil"}</title>
         <meta
           name="description"
           content={
             homepage?.metaDescription ||
-            "Participe dos melhores leilões de tratores, colheitadeiras, implementos e veículos agrícolas. Lance com segurança e encontre as melhores oportunidades do mercado."
+            "Participe dos melhores leilões de carros, motos e veículos. Lance com segurança e encontre as melhores oportunidades do mercado."
           }
         />
         <meta
           name="keywords"
-          content="leilão agrícola, tratores, colheitadeiras, máquinas agrícolas, leilão online, agronegócio"
+          content="leilão de carros, leilão de motos, leilão de veículos, leilão online, arremate24h"
         />
         <link rel="canonical" href="https://arremate24h.com.br" />
       </Helmet>
