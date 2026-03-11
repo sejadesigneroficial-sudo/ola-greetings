@@ -29,7 +29,7 @@ const steps = [
   {
     icon: Search,
     title: "2. Encontre seu Lote",
-    description: "Navegue pelos leilões ativos e encontre a máquina que você procura. Use filtros para refinar sua busca.",
+    description: "Navegue pelos leilões ativos e encontre o veículo que você procura. Use filtros para refinar sua busca.",
     details: [
       "Fotos detalhadas dos lotes",
       "Especificações completas",
