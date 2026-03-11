@@ -120,7 +120,7 @@ const ComoFunciona = () => {
               </h1>
               <p className="text-xl text-primary-foreground/80 max-w-2xl mx-auto">
                 Participar dos nossos leilões é simples e seguro. Conheça o passo a passo 
-                completo para arrematar sua próxima máquina agrícola.
+              completo para arrematar seu próximo veículo.
               </p>
             </div>
           </section>
