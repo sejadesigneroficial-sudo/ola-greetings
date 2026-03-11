@@ -25,7 +25,7 @@ export function CTASection() {
             </div>
 
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-6">
-              {homepage?.ctaTitle || "Pronto para encontrar sua próxima máquina?"}
+              {homepage?.ctaTitle || "Pronto para encontrar seu próximo veículo?"}
             </h2>
 
             <p className="text-lg text-primary-foreground/80 mb-8 mx-auto">
