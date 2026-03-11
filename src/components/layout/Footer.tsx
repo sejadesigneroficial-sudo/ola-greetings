@@ -49,7 +49,7 @@ export function Footer() {
               <img src={logo} alt="Arremate 24 Horas" className="h-12 w-auto" />
             </Link>
             <p className="text-primary-foreground/80 text-sm mb-6 max-w-sm">
-              {footer?.brandDescription || "A maior plataforma de leilões de máquinas agrícolas do Brasil. Conectando compradores e vendedores com segurança e transparência."}
+              {footer?.brandDescription || "A maior plataforma de leilões de carros e motos do Brasil. Conectando compradores e vendedores com segurança e transparência."}
             </p>
             <div className="flex gap-3">
               <a 

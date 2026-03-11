@@ -44,10 +44,10 @@ export function CategoryGrid() {
           <h2 className="font-display text-3xl lg:text-4xl font-bold text-foreground mb-4">
             Explore por Categoria
           </h2>
-          <p className="text-muted-foreground mx-auto">
-            Encontre exatamente o que procura. Navegue por nossas categorias de 
-            máquinas e equipamentos agrícolas.
-          </p>
+            <p className="text-muted-foreground mx-auto">
+              Encontre exatamente o que procura. Navegue por nossas categorias de 
+              carros, motos e veículos.
+            </p>
         </div>
 
         {/* Categories Grid */}
