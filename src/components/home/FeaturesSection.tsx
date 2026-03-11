@@ -73,7 +73,7 @@ export function FeaturesSection() {
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="font-display text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            Por que escolher a AgroLance?
+            Por que escolher a Arremate 24 Horas?
           </h2>
           <p className="text-muted-foreground mx-auto">
             Oferecemos a melhor experiência em leilões de máquinas agrícolas, 
